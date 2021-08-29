@@ -26,9 +26,9 @@ const Home = () => {
             <img
               src={logo.src}
               alt={logo.alt}
-              tw="mx-4 h-[20vmin] pointer-events-none"
+              tw="mx-4 h-[15vmin] xs:h-[20vmin] pointer-events-none"
             />
-            {index + 1 !== logos.length && <p tw="text-4xl">+</p>}
+            {index + 1 !== logos.length && <p tw="text-xl xs:text-4xl">+</p>}
           </Fragment>
         ))}
       </div>

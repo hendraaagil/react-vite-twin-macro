@@ -8,7 +8,7 @@ const Anchor = ({ children, isExternal, url }) => {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        tw="mx-4 text-blue-600 dark:text-blue-400 hover:underline"
+        tw="mx-2 xs:mx-4 text-base xs:text-lg text-blue-600 dark:text-blue-400 hover:underline"
       >
         {children}
       </a>
@@ -16,7 +16,10 @@ const Anchor = ({ children, isExternal, url }) => {
   }
 
   return (
-    <Link to={url} tw="mx-4 text-blue-600 dark:text-blue-400 hover:underline">
+    <Link
+      to={url}
+      tw="mx-2 xs:mx-4 text-base xs:text-lg text-blue-600 dark:text-blue-400 hover:underline"
+    >
       {children}
     </Link>
   );
