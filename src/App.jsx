@@ -1,8 +1,9 @@
 import 'twin.macro';
 import { useState } from 'react';
 
-import CustomLink from './components/CustomLink';
 import logo from './logo.svg';
+import CustomLink from './components/CustomLink';
+import CustomButton from './components/CustomButton';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,24 +17,30 @@ function App() {
           tw="h-[40vmin] pointer-events-none motion-safe:animate-spin-slow"
         />
         <p>Hello React + Vite + twin.macro!</p>
-        <div tw="flex items-center">
-          <button
-            type="button"
-            tw="my-4 py-2 px-4 bg-red-500 rounded hover:bg-red-600"
-            onClick={() => setCount((count) => count - 1)}
+        <div tw="flex items-center mt-4">
+          <CustomButton
+            clickAction={() => setCount((count) => count - 1)}
+            color="red"
           >
             -
-          </button>
+          </CustomButton>
           <p tw="mx-4">{count}</p>
-          <button
-            type="button"
-            tw="my-4 py-2 px-4 bg-blue-500 rounded hover:bg-blue-600"
-            onClick={() => setCount((count) => count + 1)}
+          <CustomButton
+            clickAction={() => setCount((count) => count + 1)}
+            color="blue"
           >
             +
-          </button>
+          </CustomButton>
         </div>
-        <p>
+        <CustomButton
+          clickAction={() => setCount(0)}
+          color="emerald"
+          padding="wide"
+          type="reset"
+        >
+          Reset
+        </CustomButton>
+        <p tw="mt-4">
           Edit <code>App.jsx</code> and save to test HMR updates.
         </p>
         <div tw="flex">
