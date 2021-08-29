@@ -1,6 +1,8 @@
 {
   "name": "react-vite-twin-macro",
   "version": "0.0.0",
+  "license": "MIT",
+  "author": "Hendra Agil <@hendraaagil>",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
