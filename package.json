@@ -1,5 +1,5 @@
 {
-  "name": "vite-react",
+  "name": "react-vite-twin-macro",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
