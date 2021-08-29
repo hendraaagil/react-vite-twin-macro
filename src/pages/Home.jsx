@@ -19,7 +19,7 @@ const Home = () => {
   ];
 
   return (
-    <main tw="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-gray-50 text-lg text-center">
+    <main tw="flex flex-col items-center justify-center min-h-screen text-lg text-center">
       <div tw="flex items-center mb-8">
         {logos.map((logo, index) => (
           <Fragment key={logo.alt}>
