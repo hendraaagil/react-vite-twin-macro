@@ -1,12 +1,13 @@
-import 'twin.macro';
+import tw from 'twin.macro';
 import { Fragment } from 'react';
 
 import reactLogo from '../assets/react-logo.png';
 import twinLogo from '../assets/twin-logo.png';
 import viteLogo from '../assets/vite-logo.svg';
 import Anchor from '../components/Anchor';
+import Button from '../components/Button';
 
-const Home = () => {
+const Home = ({ history }) => {
   const logos = [
     { src: reactLogo, alt: 'React logo' },
     { src: viteLogo, alt: 'Vite logo' },
@@ -19,7 +20,13 @@ const Home = () => {
   ];
 
   return (
-    <main tw="flex flex-col items-center justify-center min-h-screen text-lg text-center">
+    <main
+      css={[
+        tw`flex flex-col items-center justify-center`,
+        tw`min-h-screen`,
+        tw`text-lg text-center`,
+      ]}
+    >
       <div tw="flex items-center mb-8">
         {logos.map((logo, index) => (
           <Fragment key={logo.alt}>
@@ -32,7 +39,10 @@ const Home = () => {
           </Fragment>
         ))}
       </div>
-      <div tw="flex">
+      <Button clickAction={() => history.push('/docs')} color="blue">
+        See Docs
+      </Button>
+      <div tw="mt-6 flex">
         {links.map((link, index) => (
           <Fragment key={link.text}>
             <Anchor url={link.url} isExternal>

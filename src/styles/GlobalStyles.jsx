@@ -4,7 +4,8 @@ import tw, { css, GlobalStyles as BaseStyles } from 'twin.macro';
 const customStyles = css`
   body {
     font-family: 'Poppins', sans-serif;
-    ${tw`bg-gray-50 text-gray-800 dark:bg-gray-800 dark:text-gray-50 transition-all`}
+    ${tw`bg-gray-50 text-gray-800 dark:bg-gray-800 dark:text-gray-50`}
+    ${tw`transition-all`}
   }
 `;
 

@@ -1,4 +1,4 @@
-import 'twin.macro';
+import tw from 'twin.macro';
 import { Link } from 'react-router-dom';
 
 const Anchor = ({ children, isExternal, url }) => {
@@ -8,7 +8,11 @@ const Anchor = ({ children, isExternal, url }) => {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        tw="mx-2 xs:mx-4 text-base xs:text-lg text-blue-600 dark:text-blue-400 hover:underline"
+        css={[
+          tw`mx-2 xs:mx-4`,
+          tw`text-base xs:text-lg text-blue-600 dark:text-blue-400`,
+          tw`hover:underline`,
+        ]}
       >
         {children}
       </a>
@@ -18,7 +22,11 @@ const Anchor = ({ children, isExternal, url }) => {
   return (
     <Link
       to={url}
-      tw="mx-2 xs:mx-4 text-base xs:text-lg text-blue-600 dark:text-blue-400 hover:underline"
+      css={[
+        tw`mx-2 xs:mx-4`,
+        tw`text-base xs:text-lg text-blue-600 dark:text-blue-400`,
+        tw`hover:underline`,
+      ]}
     >
       {children}
     </Link>
