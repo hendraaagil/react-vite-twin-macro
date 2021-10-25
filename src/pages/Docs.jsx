@@ -12,12 +12,12 @@ const Docs = () => {
         tw`min-h-screen`,
       ]}
     >
-      <Heading as="h1">This is Heding 1</Heading>
-      <Heading as="h2">This is Heding 2</Heading>
-      <Heading as="h3">This is Heding 3</Heading>
-      <Heading as="h4">This is Heding 4</Heading>
-      <Heading as="h5">This is Heding 5</Heading>
-      <Heading as="h6">This is Heding 6</Heading>
+      <Heading as="h1">This is Heading 1</Heading>
+      <Heading as="h2">This is Heading 2</Heading>
+      <Heading as="h3">This is Heading 3</Heading>
+      <Heading as="h4">This is Heading 4</Heading>
+      <Heading as="h5">This is Heading 5</Heading>
+      <Heading as="h6">This is Heading 6</Heading>
       <Button clickAction={() => history.back()} color="green">
         Back to Home
       </Button>
